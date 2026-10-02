@@ -1075,7 +1075,7 @@ class HfFileSystem(fsspec.AbstractFileSystem, metaclass=_Cached):  # ty: ignore[
             url = url.replace("/resolve/", "/tree/", 1)
         return url
 
-    def get_file(self, rpath, lpath, callback=_DEFAULT_CALLBACK, outfile=None, **kwargs) -> None:  # ty: ignore[invalid-method-override]
+    def get_file(self, rpath, lpath, callback=_DEFAULT_CALLBACK, outfile=None, **kwargs) -> None:
         """
         Copy single remote file to local.
 
