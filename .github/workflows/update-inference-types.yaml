@@ -9,9 +9,13 @@ concurrency:
   group: update-inference-types
   cancel-in-progress: true
 
+permissions: {}
+
 jobs:
   pull_request:
     if: github.repository == 'huggingface/huggingface_hub'
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       # Setup Python
