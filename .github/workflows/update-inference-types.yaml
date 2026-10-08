@@ -13,6 +13,7 @@ permissions: {}
 
 jobs:
   pull_request:
+    if: github.repository == 'huggingface/huggingface_hub'
     permissions:
       contents: read
     runs-on: ubuntu-latest
